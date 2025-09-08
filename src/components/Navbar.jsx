@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
-// import logo from "../asset/navbar_logo.jpg"
-import logo from "../asset/dialflo_logo.PNG"
+
+import logo from "../asset/dialflo_logo.png"
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
