@@ -20,16 +20,16 @@ import Footer from "../components/Footer.jsx"
 
 
 // ---- logo imports (update paths if needed)
-import Company1 from "../asset/company1.WEBP";
-import Company2 from "../asset/company2.WEBP";
-import Company3 from "../asset/company3.WEBP";
-import Company4 from "../asset/company4.WEBP";
-import Company5 from "../asset/company5.WEBP";
-import Company6 from "../asset/company6.WEBP";
-import Company7 from "../asset/company7.WEBP";
-import Company8 from "../asset/company8.WEBP";
-import Company9 from "../asset/company9.WEBP";
-import Company10 from "../asset/company10.WEBP";
+import Company1 from "../asset/company1.webp";
+import Company2 from "../asset/company2.webp";
+import Company3 from "../asset/company3.webp";
+import Company4 from "../asset/company4.webp";
+import Company5 from "../asset/company5.webp";
+import Company6 from "../asset/company6.webp";
+import Company7 from "../asset/company7.webp";
+import Company8 from "../asset/company8.webp";
+import Company9 from "../asset/company9.webp";
+import Company10 from "../asset/company10.webp";
 
 const BRAND_GREEN = "#4b9f53";
 

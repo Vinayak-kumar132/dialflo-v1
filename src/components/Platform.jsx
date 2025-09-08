@@ -1,12 +1,12 @@
 import React from "react";
 
-import platform1 from "../asset/platform1.WEBP";
-import platform2 from "../asset/platform2.WEBP";
-import platform3 from "../asset/platform3.WEBP";
-import platform4 from "../asset/platform4.WEBP";
-import platform5 from "../asset/platform5.WEBP";
-import platform6 from "../asset/platform6.WEBP";
-import platform7 from "../asset/platform7.WEBP";
+import platform1 from "../asset/platform1.webp";
+import platform2 from "../asset/platform2.webp";
+import platform3 from "../asset/platform3.webp";
+import platform4 from "../asset/platform4.webp";
+import platform5 from "../asset/platform5.webp";
+import platform6 from "../asset/platform6.webp";
+import platform7 from "../asset/platform7.webp";
 
 const BRAND_GREEN = "#4b9f53";
 
