@@ -72,7 +72,8 @@ export default function Platform() {
         {/* CTA */}
         <div className="mt-10">
           <a
-            href="#try-demo"
+            href="https://calendly.com/abhishek-dialflo/30min"
+            target="blank"
             className="inline-flex items-center justify-center rounded-xl px-8 py-3 font-semibold text-white shadow-lg"
             style={{ backgroundColor: BRAND_GREEN }}
           >

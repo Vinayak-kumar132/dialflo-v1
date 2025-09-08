@@ -18,9 +18,15 @@ function Feature({ children, invert = false }) {
 
 function CTAButton({ label, variant = "outline", full = false }) {
   const base = "rounded-xl px-6 py-3 font-semibold transition shadow-sm";
+
+  const handleClick = () => {
+    window.open("https://calendly.com/abhishek-dialflo/30min", "_blank");
+  };
+
   if (variant === "solid") {
     return (
       <button
+        onClick={handleClick}
         className={`${base} text-white hover:brightness-95`}
         style={{ backgroundColor: BRAND_GREEN, width: full ? "100%" : undefined }}
       >
@@ -28,9 +34,11 @@ function CTAButton({ label, variant = "outline", full = false }) {
       </button>
     );
   }
+
   if (variant === "ghostOnSolid") {
     return (
       <button
+      onClick={handleClick}
         className={`${base} bg-white text-gray-900 hover:bg-white/90`}
         style={{ width: full ? "100%" : undefined }}
       >
@@ -38,23 +46,23 @@ function CTAButton({ label, variant = "outline", full = false }) {
       </button>
     );
   }
-  // outline
+
+  // ----- OUTLINE (updated) -----
   return (
     <button
-      className={`${base} text-[${BRAND_GREEN}] hover:text-white`}
+      onClick={handleClick}
+      className={`${base} border-2 text-[color:var(--c)] hover:bg-[var(--c)] hover:text-white`}
       style={{
-        width: full ? "100%" : undefined,
-        color: BRAND_GREEN,
+        "--c": BRAND_GREEN,            // CSS variable for brand green
         borderColor: BRAND_GREEN,
-        borderWidth: 2,
+        width: full ? "100%" : undefined,
       }}
-      onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = BRAND_GREEN)}
-      onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "transparent")}
     >
       {label}
     </button>
   );
 }
+
 
 /* ---------- Card ---------- */
 function PricingCard({
@@ -62,7 +70,7 @@ function PricingCard({
   priceLabel,
   subLabel = "per month",
   features,
-  variant = "outline", // "outline" | "solid" | "bordered"
+  variant = "outline", 
   ctaLabel,
   popular = false,
 }) {
@@ -141,7 +149,7 @@ export default function PricingSection() {
             title="Starter"
             priceLabel="₹9,999"
             features={[
-              "Up to 1,000 calls/month",
+              "Up to 2,000 calls/month",
               "5 languages support",
               "Basic analytics",
               "Email support",

@@ -141,7 +141,7 @@ export default function Hero() {
       "help your customers 24×7",
       "know the perfect moment to upsell",
       "spot loyal customers",
-      "Uncover customer pain-points early",
+     
     ],
     []
   );
@@ -155,10 +155,11 @@ export default function Hero() {
   const [category, setCategory] = useState(""); // "" shows placeholder
   const [phone, setPhone] = useState("");
 
-  const onTry = (e) => {
-    e.preventDefault();
-    console.log("Try clicked with:", { category, phone });
-  };
+ const onTry = (e) => {
+  e.preventDefault();
+  window.open("https://calendly.com/abhishek-dialflo/30min", "_blank");
+};
+
 
   return (
     <section id="hero" className="relative overflow-hidden -mt-4 md:h-[calc(100vh-100px)]">
@@ -233,8 +234,11 @@ export default function Hero() {
                 />
 
                 {/* Try Demo Button */}
+                
                 <button
+                
                   type="submit"
+                  
                   className="
                     flex gap-2 justify-center items-center
                     h-12 sm:h-14
@@ -248,9 +252,13 @@ export default function Hero() {
                   "
                   style={{ backgroundColor: BRAND_GREEN }}
                 >
+                  
                   <IoCall className="text-xl sm:text-2xl" />
                   TRY DEMO
+                 
+                  
                 </button>
+                
               </div>
           </form>
 

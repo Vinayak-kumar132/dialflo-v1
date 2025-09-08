@@ -97,7 +97,8 @@ export default function ReasonsSection() {
         {/* CTA */}
         <div className="mt-10 flex justify-center">
           <a
-            href="#try-demo"
+            href="https://calendly.com/abhishek-dialflo/30min"
+            target="blank"
             className="inline-flex items-center justify-center rounded-xl px-8 py-3 font-semibold text-white shadow-lg hover:brightness-95 transition"
             style={{ backgroundColor: BRAND_GREEN }}
           >

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FiLinkedin, FiYoutube, FiInstagram } from "react-icons/fi";
+import AFFILIATE_PDF from "../asset/Dialflo-Affiliate-Partners.pdf";
 
 const BRAND_GREEN = "#4b9f53";
 
@@ -29,7 +30,8 @@ export default function Footer() {
 
             <div className="mt-6 flex items-center gap-4">
               <a
-                href="#"
+                href="https://www.linkedin.com/company/dialflo/"
+                target="blank"
                 aria-label="LinkedIn"
                 className="inline-flex h-9 w-9 items-center justify-center rounded-md bg-white/5 ring-1 ring-white/10 hover:bg-white/10"
               >
@@ -50,6 +52,15 @@ export default function Footer() {
                 <FiInstagram className="text-xl" />
               </a>
             </div>
+            
+
+              <div className="flex flex-col items-center justify-between gap-3   pt-6 text-sm text-gray-400 sm:flex-row">
+          <div>© {new Date().getFullYear()}. All rights reserved.</div>
+          <div className="hidden sm:block" />
+        </div>
+
+
+
           </div>
 
           {/* Industries */}
@@ -58,8 +69,18 @@ export default function Footer() {
             <ul className="mt-4 space-y-3">
               <li><a className="hover:text-white" href="#">D2C Businesses</a></li>
               <li><a className="hover:text-white" href="#">Logistics</a></li>
-              <li><a className="hover:text-white" href="#">E-commerce</a></li>
               <li><a className="hover:text-white" href="#">Healthcare</a></li>
+              <li>
+                <a
+                  href={AFFILIATE_PDF}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white"
+                  style={{ color: BRAND_GREEN }}
+                >
+                  Affiliate Partner's
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -128,10 +149,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-sm text-gray-400 sm:flex-row">
-          <div>© {new Date().getFullYear()}. All rights reserved.</div>
-          <div className="hidden sm:block" />
-        </div>
+        
       </div>
     </footer>
   );
