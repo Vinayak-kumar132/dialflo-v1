@@ -31,7 +31,7 @@ export default function Navbar() {
           <div className="flex gap-1 ">
             <img
           src={logo}
-          className="w-170 h-14"
+          className="md:w-170 md:h-14 w-150 h-10"
           />
         
           </div>
